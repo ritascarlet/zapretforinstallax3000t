@@ -72,8 +72,8 @@ opkg update
 
 # Ска gиваем и  c a bанавливаем паке b k
 echo "Downloading and installing zapret..."
-wget -O /tmp/zapret.ipk https://raw.githubusercontent.com/ritascarlet/testforwork/main/zapret.ipk
-wget -O /tmp/luciapp.ipk https://raw.githubusercontent.com/ritascarlet/testforwork/main/luciapp.ipk
+wget -O /tmp/zapret.ipk https://github.com/ritascarlet/zapretforinstallax3000t/raw/refs/heads/main/zapret.ipk
+wget -O /tmp/luciapp.ipk https://github.com/ritascarlet/zapretforinstallax3000t/raw/refs/heads/main/luciapp.ipk
 
 if opkg install /tmp/zapret.ipk; then
     echo "Zapret installed successfully."
