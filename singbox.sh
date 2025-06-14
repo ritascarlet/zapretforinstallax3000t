@@ -29,6 +29,6 @@ EOF
 
 chmod +x /etc/init.d/getdomains
 
-./etc/init.d/getdomains start
+/etc/init.d/getdomains start
 
 cat /etc/sing-box/config.json
