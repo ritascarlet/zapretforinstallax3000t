@@ -59,9 +59,13 @@ config ipset
 EOF
 
 # Отключаем ip v6
+uci -q delete dhcp.lan.dhcpv6
+uci -q delete dhcp.lan.ra
+uci commit dhcp
+/etc/init.d/odhcpd restart
 
 
-
+passwd
 
 echo ""
 echo ""
