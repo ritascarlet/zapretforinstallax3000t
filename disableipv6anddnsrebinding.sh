@@ -14,7 +14,7 @@ echo ""
 echo ""
 echo ""
 
-
+# Отключаем dns rebinding
 cat > /etc/config/dhcp << EOF
 config dnsmasq
         option domainneeded '1'
@@ -57,6 +57,8 @@ config ipset
         list domain 'whatismyipaddress.com'
 
 EOF
+
+# Отключаем ip v6
 
 
 
