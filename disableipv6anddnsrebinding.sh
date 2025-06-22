@@ -63,6 +63,7 @@ uci -q delete dhcp.lan.dhcpv6
 uci -q delete dhcp.lan.ra
 uci commit dhcp
 /etc/init.d/odhcpd restart
+/etc/init.d/network restart
 
 
 passwd
