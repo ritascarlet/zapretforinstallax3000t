@@ -14,7 +14,6 @@ echo ""
 echo ""
 echo ""
 
-passwd
 
 cat > /etc/config/wireless << EOF
 config wifi-device 'radio0'
