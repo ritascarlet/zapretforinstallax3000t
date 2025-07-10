@@ -74,6 +74,10 @@ opkg update
 echo "Downloading and installing zapret..."
 wget -O /tmp/zapret.ipk https://github.com/ritascarlet/zapretforinstallax3000t/raw/refs/heads/main/zapret.ipk
 wget -O /tmp/luciapp.ipk https://github.com/ritascarlet/zapretforinstallax3000t/raw/refs/heads/main/luciapp.ipk
+wget -O /tmp/zapretip2net.ipk https://github.com/ritascarlet/zapretforinstallax3000t/raw/refs/heads/main/zapretip2net.ipk
+wget -O /tmp/zapretmdig.ipk https://github.com/ritascarlet/zapretforinstallax3000t/raw/refs/heads/main/zapretmdig.ipk
+wget -O /tmp/zaprettpws.ipk https://github.com/ritascarlet/zapretforinstallax3000t/raw/refs/heads/main/zaprettpws.ipk
+
 
 if opkg install /tmp/zapret.ipk; then
     echo "Zapret installed successfully."
@@ -89,9 +93,33 @@ else
     exit 1
 fi
 
+if opkg install /tmp/zapretip2net.ipk; then
+    echo "Zapret installed successfully."
+else
+    echo "Failed to install Zapret."
+    exit 1
+fi
+
+if opkg install /tmp/zapretmdig.ipk; then
+    echo "Zapret installed successfully."
+else
+    echo "Failed to install Zapret."
+    exit 1
+fi
+
+if opkg install /tmp/zaprettpws.ipk; then
+    echo "Zapret installed successfully."
+else
+    echo "Failed to install Zapret."
+    exit 1
+fi
 # Удал oем в `еменн kе  dайл k
 rm /tmp/zapret.ipk
 rm /tmp/luciapp.ipk
+rm /tmp/zapretip2net.ipk
+rm /tmp/zapretmdig.ipk
+rm /tmp/zaprettpws.ipk
+
 
 /etc/init.d/getdomains enable
 
