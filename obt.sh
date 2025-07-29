@@ -23,10 +23,9 @@ if ! command -v systemctl >/dev/null 2>&1; then
     exit 1
 fi
 
-apt update -y && sudo apt upgrade -y
 
-apt install wget git build-essential -y
 
+apt install wget git -y 
 echo "✅ Проверки и обновления пройдены"
 
 echo "Начинаю установку новой версии OBT"
