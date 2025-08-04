@@ -32,7 +32,7 @@ echo "Начинаю установку новой версии OBT"
 
 cd
 
-wget https://github.com/ritascarlet/zapretforinstallax3000t/raw/refs/heads/main/obt
+wget https://backups.tgvpnbot.com/ritascarlet/OBT/raw/branch/main/obt
 
 # Функция установки
 install_obt() {
